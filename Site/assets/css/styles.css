@@ -1,0 +1,85 @@
+body{
+   background-color: #f8f8f8f8;
+}
+
+/* Home */
+.fit-cover {
+   object-fit: cover;
+}
+
+.logo img{
+   width: 38px;
+}
+
+.img_intro{
+   background: linear-gradient(144deg, rgba(126,126,126,0.8883928571428571) 0%, rgba(0,0,0,0.90) 100%),
+   url(../img/airplaneBg.jpg) center / cover;height: 600px;
+}
+
+.secao_intro .container{
+   max-width: initial;
+   padding: 0;
+}
+
+.titulo_intro, .txt_intro{
+   color: #ffffff;
+   letter-spacing: 0.2rem;
+}
+
+
+/* Destinos */
+.secao_destinos{
+   margin-top: 5%;
+}
+
+.secao_destinos .container .card:hover{
+   transform: scale(100.75%);
+   transition: 230ms;
+}
+
+.card{
+   box-shadow: 1px 5px 5px #2e2e2e23;
+}
+
+.card-img{
+   height: 250px;
+   object-fit: cover;
+}
+
+.card-title{
+   font-weight: 700;
+   font-family: 'nunito';
+}
+
+.card-text{
+   color: rgb(27, 27, 27);
+   font-family: 'lato';
+}
+
+.btn.btn-outline-success.btn-sm::before{
+   content: 'R$ ';
+   font-weight: 600;
+   font-size: 18px;
+}
+
+.btn.btn-outline-success.btn-sm::after{
+   content: ',00';
+   font-size: 11px;
+}
+
+/* Contato */
+.form-control:focus::-webkit-input-placeholder{
+   color: transparent;
+}
+
+a{
+   text-decoration: none;
+}
+
+.link_contato:hover{
+   text-decoration: underline;
+}
+
+a h6 {
+   color: #000;
+}
