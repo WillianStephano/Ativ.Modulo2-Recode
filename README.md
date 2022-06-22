@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://meek-hotteok-bc030e.netlify.app/ target="_blank">
+  <a href="https://meek-hotteok-bc030e.netlify.app/">
     <b>🚀Acesse o site projeto em funcionamento 🚀</b>
   </a>
 
