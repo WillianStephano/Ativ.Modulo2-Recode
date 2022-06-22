@@ -35,7 +35,6 @@ body{
 .secao_destinos .container .card:hover{
    transition: 350ms;
    box-shadow: 1px 5px 5px #2e2e2e55;
-
 }
 
 .card{
@@ -59,7 +58,7 @@ body{
 
 .btn.btn-outline-success.btn-sm{
    font-weight: 600;
-
+   
 }
 
 .btn.btn-outline-success.btn-sm::before{
@@ -107,6 +106,11 @@ a h6 {
    display: flex;
 }
 
+.secao-promo .container .card:hover{
+   box-shadow: 1px 5px 5px #2e2e2e55;
+   transition: 350ms;
+}
+
 .conteudo-promo{
    padding: 1% ;
 }
@@ -114,8 +118,8 @@ a h6 {
 .img-teste{
    width: 40%;
    max-height: 247px;
-   box-shadow: 1px 5px 5px #2e2e2e23;
    border-radius: 4px 0px 0px 4px;
+   object-fit: cover;
 }
 
 .titulo-promo{
@@ -177,8 +181,16 @@ a h6 {
    .img-teste{
       width: 100%;
    }
-
+   
    .conteudo-promo{
       width: 100%;
+   }
+   
+   .formulario-contato{
+      order: 1;
+   }
+   
+   .icons-formulario{
+      order: 2;
    }
 }
