@@ -33,8 +33,9 @@ body{
 }
 
 .secao_destinos .container .card:hover{
-   transform: scale(100.75%);
-   transition: 230ms;
+   transition: 350ms;
+   box-shadow: 1px 5px 5px #2e2e2e55;
+
 }
 
 .card{
@@ -56,9 +57,14 @@ body{
    font-family: 'lato';
 }
 
+.btn.btn-outline-success.btn-sm{
+   font-weight: 600;
+
+}
+
 .btn.btn-outline-success.btn-sm::before{
    content: 'R$ ';
-   font-weight: 600;
+   font-weight: 700;
    font-size: 18px;
 }
 
@@ -82,4 +88,97 @@ a{
 
 a h6 {
    color: #000;
+}
+
+/* promo */
+.secao-promo{
+   margin-top: 5%;
+}
+
+.titulo_promo{
+   text-align: center;
+}
+
+.secao-promo .container .card{
+   width: 90%;
+   margin: 0 auto;
+   padding: 0;
+   flex-direction: row;
+   display: flex;
+}
+
+.conteudo-promo{
+   padding: 1% ;
+}
+
+.img-teste{
+   width: 40%;
+   max-height: 247px;
+   box-shadow: 1px 5px 5px #2e2e2e23;
+   border-radius: 4px 0px 0px 4px;
+}
+
+.titulo-promo{
+   font-size: 24px;
+}
+
+.valor{
+   text-align: center;
+}
+
+.txt-valor{
+   color: #4dbe3b;
+   font-weight: 700;
+   font-size: 26px;
+   margin: 0;
+}
+
+.txt-valor::before{
+   content: 'R$';
+   font-size: 14px;
+}
+
+.txt-valor::after{
+   content: ',00';
+   font-size: 13px;
+}
+
+.desconto{
+   text-decoration: line-through;
+   color: #ff0000a1;
+   font-size: 16px;
+   margin: 0;
+}
+
+.tag-preço{
+   width: 11%;
+   height: 21px;
+   font-size: 12px;
+   text-align: center;
+   color: #fff;
+   font-weight: bold;
+   box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+   background: #4dbe3b;
+   transform: rotate(-45deg);
+   position: absolute;
+   top: 20px;
+   left: -3%;
+}
+
+@media (max-width:1000px) {
+   .tag-preço{
+      display: none;
+   }
+   
+   .secao-promo .container .card{
+      flex-direction: column;
+   }
+   
+   .img-teste{
+      width: 100%;
+   }
+
+   .conteudo-promo{
+      width: 100%;
+   }
 }
