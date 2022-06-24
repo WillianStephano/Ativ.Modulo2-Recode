@@ -169,6 +169,42 @@ a h6 {
    left: -3%;
 }
 
+/* Modal */
+
+.modal-img{
+   width: 8%;
+   padding-right: 2%;
+}
+
+.modal .container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.modal .container > div{
+   display: flex;
+   align-items: center;
+}
+
+.txt-modal{
+   margin: 0;
+}
+
+.info-modal{
+   color: #808080;
+   font-family: 'nunito', sans-serif;
+   font-size: 12px;
+   text-align: center;
+   margin-top: 2%;
+}
+
+.info-modal span{
+   font-weight: 600;
+   color: #747474;
+}
+
+/* correções em responsividade */
 @media (max-width:1000px) {
    .tag-preço{
       display: none;

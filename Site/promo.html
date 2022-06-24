@@ -56,7 +56,7 @@
                   <div class="valor">
                      <p class="txt-valor desconto">1.552</p>
                      <p class="txt-valor">1.116</p>
-                     <a href="" class="btn btn-outline-success w-100">Compre agora</a>
+                     <a href="" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Compre agora</a>
                   </div>
                </div>
                <div class="tag-preço">Preço imbativel</div>
@@ -70,7 +70,7 @@
                   <div class="valor">
                      <p class="txt-valor desconto">1.237</p>
                      <p class="txt-valor">860</p>
-                     <a href="" class="btn btn-outline-success w-100">Compre agora</a>
+                     <a href="" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Compre agora</a>
                   </div>
                </div>
                <div class="tag-preço">Preço imbativel</div>
@@ -84,7 +84,7 @@
                   <div class="valor">
                      <p class="txt-valor desconto">980</p>
                      <p class="txt-valor">791</p>
-                     <a href="" class="btn btn-outline-success w-100">Compre agora</a>
+                     <a href="" class="btn btn-outline-success w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Compre agora</a>
                   </div>
                </div>
                <div class="tag-preço">Preço imbativel</div>
@@ -93,15 +93,48 @@
             
          </div>
       </section>
- 
-
-   <footer class="text-center py-4 rodape">
-      <div class="container">
-         <div class="col">
-            <p class="text-muted my-2">Willian Stephano&nbsp;© 2022</p>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Detalhes da compra</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="modal-txt">
+                     <p>Sit qui quis ullamco sit Lorem enim sint ad et exercitation cupidatat sunt. Esse dolore reprehenderit exercitation ad dolore laboris excepteur fugiat in voluptate cillum enim ullamco. Commodo irure velit consequat magna dolor mollit veniam. Labore sint aliqua nostrud culpa aute sit excepteur consectetur aliqua.</p>
+                     <div class="container">
+                        <div class="voo">
+                           <img class="modal-img" src="assets/img/airplaneModal.svg" alt="">
+                           <p class="txt-modal">Voo direto</p>
+                        </div>
+                        
+                        <div class="hospedagem">
+                           <img class="modal-img" src="assets/img/hotels.svg" alt="">
+                           <p class="txt-modal">Hotel Small Palace</p>
+                        </div>
+                     </div>
+                     <p class="info-modal">Oferta disponivel de <span>Sab 18 Jul</span> ate <span> Seg 13 Ago  </span> </p>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                  <button type="button" class="btn btn-primary">Comprar</button>
+               </div>
+            </div>
          </div>
       </div>
-   </footer>
+      
+      
+      <footer class="text-center py-4 rodape">
+         <div class="container">
+            <div class="col">
+               <p class="text-muted my-2">Willian Stephano&nbsp;© 2022</p>
+            </div>
+         </div>
+      </footer>
       <script src="assets/bootstrap/js/bootstrap.min.js"></script>
       
    </body>
