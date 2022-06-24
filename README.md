@@ -8,7 +8,7 @@
   </a>
 
 
-## 📚 O site e seu funcionamento
+## 📚 O site e seu funcionamento ##
 O site é composto por 4 paginas seguindo o enunciado da atividade:
 
 - **Home:** Informações gerais sobre o site e uma seção apresentando os principais serviços do mesmo;
@@ -16,22 +16,22 @@ O site é composto por 4 paginas seguindo o enunciado da atividade:
 - **Promoções:** Cards contendo promoções de viagens assim como seu valor anterior, valor atual e botão de compra;
 - **Contato:** Formulario para envio de duvidas e tambem uma seção de links para o telefone, email e endereço da agencia que direcionam para um respectivo destino na web.
 
-### 💼 Conteudo utilizado
+### 💼 Conteudo utilizado ###
 Para o desenvolvimento deste projeto utilizei as seguintes tecnologias:
 
 - HTML;
 - CSS;
 - Bootstrap;
-- [Google Fontes](https://fonts.google.com/)
+- Google Fontes;
 - Imagens de todos os locais/cidades não possuem direitos autorais e foram retiradas do site unsplash.com;
 
 ---
-## 📚 Pseudocódigo portugol
+
+## 📚 Pseudocódigo portugol ##
+
+Simualçao de um pseudocódigo de um menu de cadastro de cliente e destino de uma agencia de viagem, assim como consulta desses dados cadastrados.
 
 
-EM CONSTRUÇÃO
 
----
-
-##### Autor
+##### Autor #####
 Willian Stephano
