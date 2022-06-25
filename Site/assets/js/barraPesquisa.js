@@ -9,19 +9,15 @@ btnPesquisa.addEventListener('click', () => {
       for (let i = 0; i < colecaoTitulos.length; i++) {
          const titulo = colecaoTitulos[i];
          
-         if (titulo.textContent.toLocaleLowerCase() !== valorPesquisa.value) {
+         if (titulo.textContent.toLocaleLowerCase() !== valorPesquisa.value.toLocaleLowerCase()) {
             colecaoCard[i].parentElement.style.display = 'none'
-            
          }
          else{
             colecaoCard[i].style.display = 'block'
             
          }
-      }
-      
+      }  
    }
-   
-   
 })
 
 
