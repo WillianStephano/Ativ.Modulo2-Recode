@@ -30,7 +30,7 @@ Para o desenvolvimento deste projeto utilizei as seguintes tecnologias:
 
 ## 📚 Pseudocódigo portugol ##
 
-Simualçao de um pseudocódigo de um menu de cadastro de cliente e destino de uma agencia de viagem, assim como consulta desses dados cadastrados.
+Criação de um pseudocódigo de um menu de cadastro de cliente e destino de uma agencia de viagem, assim como consulta desses dados cadastrados.
 
 
 
