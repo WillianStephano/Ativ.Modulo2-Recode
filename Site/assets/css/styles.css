@@ -2,7 +2,7 @@ body{
    background-color: #f8f8f8f8;
 }
 
-/* Home */
+/* ##################### Home ##################### */
 .fit-cover {
    object-fit: cover;
 }
@@ -27,7 +27,38 @@ body{
 }
 
 
-/* Destinos */
+/* ##################### Barra de Pesquisa ##################### */
+.pesquisa form{
+   display: flex;
+   justify-content: center;
+   margin-top: 3%;
+}
+
+.campo_pesquisa{
+   width: 50%;
+   padding: 0.5%;
+   border-radius: 5px 0px 0px 5px;
+   border: 1px solid #a6a6a6;
+}
+
+.campo_pesquisa:focus{
+   outline: 1px solid #55ACEE;
+}
+
+.btn_pesquisa{
+   border-radius: 0px 5px 5px 0px;
+   border: 1px solid #a6a6a6;
+   font-weight: 500;
+}
+
+.btn_pesquisa:hover{
+   background-color: #3492da;
+   color: #ffffff;
+   transition: 250ms;
+}
+
+
+/* ##################### Destinos ##################### */
 .secao_destinos{
    margin-top: 5%;
 }
@@ -72,7 +103,7 @@ body{
    font-size: 11px;
 }
 
-/* Contato */
+/* ##################### Contato ##################### */
 .form-control:focus::-webkit-input-placeholder{
    color: transparent;
 }
@@ -89,7 +120,7 @@ a h6 {
    color: #000;
 }
 
-/* promo */
+/*##################### Promo ##################### */
 .secao-promo{
    margin-top: 5%;
 }
@@ -169,7 +200,7 @@ a h6 {
    left: -3%;
 }
 
-/* Modal */
+/* ##################### Modal ##################### */
 
 .modal-img{
    width: 8%;
@@ -204,7 +235,7 @@ a h6 {
    color: #747474;
 }
 
-/* correções em responsividade */
+/* ##################### correções em responsividade ##################### */
 @media (max-width:1000px) {
    .tag-preço{
       display: none;
