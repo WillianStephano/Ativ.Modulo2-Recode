@@ -211,6 +211,7 @@ a h6 {
    display: flex;
    flex-direction: column;
    justify-content: center;
+   line-height: 2.0em;
 }
 
 .modal .container > div{
@@ -233,6 +234,14 @@ a h6 {
 .info-modal span{
    font-weight: 600;
    color: #747474;
+}
+
+.label_data_campo{
+   padding-right: 0.5rem;
+}
+
+.data_campo{
+   height: 25px;
 }
 
 /* ##################### correções em responsividade ##################### */
