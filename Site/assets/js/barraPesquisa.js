@@ -32,7 +32,7 @@ valorPesquisa.addEventListener('input', function () {
 })
 
 function validaCampo(valorPesquisa) {
-   if (valorPesquisa.value == '') {
+   if (valorPesquisa.value == '' || isNaN(valorPesquisa.value) !== true) {
       window.alert('Erro: insira um texto no campo')
       return  false
    }else{
