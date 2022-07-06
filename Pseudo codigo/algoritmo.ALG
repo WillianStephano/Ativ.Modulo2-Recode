@@ -1,24 +1,25 @@
 Algoritmo "Trabalho RecodePRO"
 
 Var
-   // Seção de Declarações das variáveis
-   numero : vetor[1..5] de inteiro
-   NOME   : vetor[1..5] de caracter
-   CIDADE  : vetor[1..5] de caracter
+   // Declarações das variáveis
+   colecaoIndice : vetor[1..5] de inteiro
+   nome   : vetor[1..5] de caracter
+   cidade  : vetor[1..5] de caracter
+   anoNasc  : vetor[1..5] de inteiro
    destino  : vetor[1..5] de caracter
    indice : inteiro
-     L,XL :  LOGICO
-    OPCAO : Caracter
+     L,XL :  logico
+    OPCAO : caracter
 
 
    
-FUNÇÃO PESQUISA(XV: INTEIRO) : LOGICO
-VAR II : INTEIRO
-   A : LOGICO
+FUNÇÃO PESQUISA(XV: inteiro) : logico
+VAR II : inteiro
+   A : logico
 INICIO
    A := FALSO
    PARA II DE 1 ATÉ 5 FAÇA
-      SE numero[ii] = xv ENTÃO
+      SE colecaoIndice[ii] = xv ENTÃO
          A := VERDADEIRO
          interrompa
       FIMSE
@@ -31,17 +32,18 @@ FIMFUNÇÃO
 // ################### Cliente ########################
 PROCEDIMENTO cadastrarCliente
 VAR
-   II  : INTEIRO
-   L  :  LOGICO
-   xnum : INTEIRO
+   II  : inteiro
+   L  :  logico
+   xnum : inteiro
    xnom : caracter
    xidd : caracter
+   xano : inteiro
 
 INICIO
    limpaTela
-   Escreval("Cadastro de cliente")
+   escreval("Cadastro de cliente")
 
-   SE indice <= 5 ENTÃO
+   se indice <= 5 então
       xnum := 0
       Xnom := ""
       xidd := ""
@@ -57,10 +59,14 @@ INICIO
       
       escreva("Insira a cidade do cliente: ")
       leia(xidd)
+      
+      escreva("Ano de nascimento: ")
+      leia(xano)
 
-      Numero[indice] := xnum
-      Nome[indice]   := xnom
-      Cidade[indice]  := xidd
+      colecaoIndice[indice] := xnum
+      nome[indice]   := xnom
+      cidade[indice]  := xidd
+      anoNasc[indice] := xano
       indice := indice + 1
    fimse
 
@@ -75,7 +81,7 @@ PROCEDIMENTO consultarCliente
 VAR
    II : inteiro
    L  :  LOGICO
-   xnum : INTEIRO
+   xnum : inteiro
    xnom : caracter
    xidd : caracter
 
@@ -85,7 +91,7 @@ INICIO
    escreval(" CONSULTA ")
 
    para II de 1 ate 5 faça
-      escreval(NUMERO[II]," ",NOME[II]," - ",CIDADE[II])
+      escreval(colecaoIndice[II]," ",nome[II]," - ",cidade[II]," - ",anoNasc[II])
    fimpara
 
    escreval(" ")
@@ -110,7 +116,7 @@ INICIO
    limpaTela
    Escreval("Cadastro de cliente")
 
-   SE indice <= 5 ENTÃO
+   se indice <= 5 então
       xnum := 0
       Xnom := ""
       xidd := ""
@@ -124,7 +130,7 @@ INICIO
       escreva("Insira o nome do destino: ")
       leia(xnom)
 
-      Numero[indice] := xnum
+      colecaoIndice[indice] := xnum
       destino[indice]   := xnom
       indice := indice + 1
    fimse
@@ -149,7 +155,7 @@ INICIO
    escreval(" Consulta de destino disponiveis: ")
 
    para II de 1 ate 5 faça
-      escreval(NUMERO[II]," - ",destino[II])
+      escreval(colecaoIndice[II]," - ",destino[II])
    fimpara
 
    escreval(" ")
@@ -169,7 +175,7 @@ Inicio
    indice := 1
    L := VERDADEIRO
    OPCAO := ""
-   ENQUANTO L FAÇA
+   enquanto L faça
       LIMPATELA
       Escreval("   MENU PRINCIPAL   ")
       Escreval("1-Cadastrar cliente")
